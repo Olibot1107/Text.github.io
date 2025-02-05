@@ -1,55 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Character Counter with Copy Button</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 50px;
-        }
-        textarea {
-            width: 100%;
-            height: 150px;
-            padding: 10px;
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-        .counter {
-            font-size: 14px;
-            color: #555;
-            margin-bottom: 10px;
-        }
-        .copy-button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
-</head>
+<html>
+  <style>
+    body {
+  background-color: SkyBlue;
+     }
+  </style>
 <body>
-
-    <h1>Character Counter with Copy Button</h1>
-    <textarea id="textBox" placeholder="Type your text here..."></textarea>
-    <div class="counter">Character count: <span id="charCount">0</span></div>
-    <button class="copy-button" onclick="copyText()">Copy Text</button>
-
-    <script>
-        const textBox = document.getElementById('textBox');
-        const charCount = document.getElementById('charCount');
-
-        textBox.addEventListener('input', () => {
-            charCount.textContent = textBox.value.length;
-        });
-
-        function copyText() {
-            textBox.select();
-            textBox.setSelectionRange(0, 99999); // For mobile devices
-            document.execCommand('copy');
-            alert('Text copied to clipboard!');
-        }
-    </script>
-
+   <h1>Motivational Poster</h1><br>
+   <h3 style="background-color:MediumSeaGreen;">Dont Give up You May Get Better But If You Give Up You Will Get Worse</h3>
+   <h3 style="background-color:Orange;">Your Brain is Like a Road it Starts as A dirt Path and then A Pathed road Then a motor way then a road</h3>
 </body>
 </html>
